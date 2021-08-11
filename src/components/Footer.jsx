@@ -6,7 +6,7 @@ function Footer(){
 
     return (
         <footer>
-            <p>Copyright Satyam Shubham</p>
+            <p>Copyright Saujanya</p>
             <p>{curr_year}</p>
         </footer>
     );
