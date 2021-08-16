@@ -13,8 +13,6 @@ body {
 }
 
 header {
-  height: 8vh;
-  width: 110vw;
   background-color: rgb(224, 221, 221);
   margin: auto -16px;
   padding: 16px 32px;
@@ -30,7 +28,7 @@ header h1 {
 
 
 footer {
-  position: absolute;
+  position: fixed;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -41,13 +39,13 @@ footer p {
   color: #ccc;
 }
 .note {
-  transform: translate(0%,-600%);
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 240px;
-  margin: 16px;
+  width: 283px;
+  /* align-self: center; */
+  margin: 10px;
   float: left;
 }
 .note h1 {
@@ -78,7 +76,6 @@ footer p {
 
 form {
   position: relative;
-  transform: translate(0%,-500%);
   width: 480px;
   margin: 30px auto 20px auto;
   background: #ffffff;
@@ -110,4 +107,6 @@ form button {
   cursor: pointer;
   outline: none;
 }
-
+/* canvas{
+  width: auto;
+} */
