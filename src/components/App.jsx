@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Note from "./Note";
 // import notes from "../notes";
 import CreateArea from "./CreateArea";
+import Particles from 'react-particles-js';
 
 
 
@@ -36,6 +37,21 @@ function App(){
     return (
         <div>
             <Header />
+            <div>
+            <Particles
+            params={{
+                particles: {
+                    number: {
+                        value: 200,
+                        density: {
+                            enable: true,
+                            value_area: 1000,
+                            color: "#3CA9D1",
+                                }
+                            },
+                        },
+                    }}
+            />
             <CreateArea addNote = {addNote} deleteNote = {deleteNote} />
             
             {notes.map((props,idx)=>{
@@ -52,6 +68,7 @@ function App(){
             />  
              ) })}
             <Footer />
+            </div>
 
         </div>
     );
