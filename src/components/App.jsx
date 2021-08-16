@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import Note from "./Note";
 // import notes from "../notes";
 import CreateArea from "./CreateArea";
-import Particles from 'react-particles-js';
+import ParticleBackground from "../ParticleBackground";
 
 
 
@@ -33,42 +33,31 @@ function App(){
             })
         })
     }
-
+    
     return (
-        <div>
+        <div class="container">
             <Header />
+            <ParticleBackground />
+        
             <div>
-            <Particles
-            params={{
-                particles: {
-                    number: {
-                        value: 200,
-                        density: {
-                            enable: true,
-                            value_area: 1000,
-                                }
-                            },
-                        },
-                    }}
-            />
-            <CreateArea addNote = {addNote} deleteNote = {deleteNote} />
-            
-            {notes.map((props,idx)=>{
-
-            return(
+                <CreateArea addNote = {addNote} deleteNote = {deleteNote} />
                 
-            <Note 
-                key = {idx} 
-                id = {idx} 
-                title = {props.title}
-                content = {props.content}
-                addNote = {addNote}
-                deleteNote = {deleteNote}
-            />  
-             ) })}
-            <Footer />
-            </div>
+                {notes.map((props,idx)=>{
+                    
+                    return(
+                        
+                        <Note 
+                        key = {idx} 
+                        id = {idx} 
+                        title = {props.title}
+                        content = {props.content}
+                        addNote = {addNote}
+                        deleteNote = {deleteNote}
+                        />  
+                        ) })}
+                <Footer />
 
+            </div>
         </div>
     );
 }

@@ -7,20 +7,24 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background: rgb(35, 39, 65);
   padding: 0 16px;
+  overflow: hidden;
 }
 
 header {
-  background-color: #4ef198;
+  height: 8vh;
+  width: 110vw;
+  background-color: rgb(224, 221, 221);
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
+
 header h1 {
-  color: #fff;
-  font-family: "McLaren", cursive;
+  color: rgb(35, 39, 65);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 200;
 }
 
@@ -37,6 +41,7 @@ footer p {
   color: #ccc;
 }
 .note {
+  transform: translate(0%,-600%);
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -60,19 +65,23 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #62e273;
+  color: #ffffff;
+  background-color: #2e3358;
   border: none;
-  width: 36px;
+  width: 40px;
   height: 36px;
+  border-radius: 10%;
+  box-shadow: #ccc;
   cursor: pointer;
   outline: none;
 }
 
 form {
   position: relative;
+  transform: translate(0%,-500%);
   width: 480px;
   margin: 30px auto 20px auto;
-  background: #fff;
+  background: #ffffff;
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
@@ -91,7 +100,7 @@ form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #62e273;
+  background: #2e3358;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -101,3 +110,4 @@ form button {
   cursor: pointer;
   outline: none;
 }
+
