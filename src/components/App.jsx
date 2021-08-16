@@ -46,7 +46,6 @@ function App(){
                         density: {
                             enable: true,
                             value_area: 1000,
-                            color: "#3CA9D1",
                                 }
                             },
                         },
