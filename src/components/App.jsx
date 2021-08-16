@@ -35,11 +35,27 @@ function App(){
     }
     
     return (
-        <div class="container">
-            <Header />
+        <div
+            style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%"
+                    }}
+             >
             <ParticleBackground />
         
-            <div>
+            <div
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
+                <Header />
                 <CreateArea addNote = {addNote} deleteNote = {deleteNote} />
                 
                 {notes.map((props,idx)=>{
