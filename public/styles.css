@@ -3,9 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: rgb(35, 39, 65);
   padding: 0 16px;
@@ -45,7 +47,7 @@ footer p {
   padding: 10px;
   width: 283px;
   /* align-self: center; */
-  margin: 10px;
+  margin: 5px;
   float: left;
 }
 .note h1 {
@@ -107,6 +109,10 @@ form button {
   cursor: pointer;
   outline: none;
 }
-/* canvas{
-  width: auto;
-} */
+
+/* for making the canvas responsive */
+canvas{
+  width: auto !important;
+}
+
+
