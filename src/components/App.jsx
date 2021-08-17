@@ -41,9 +41,9 @@ function App(){
                     top: 0,
                     left: 0,
                     width: "100%",
-                    height: "100%"
-                    }}
-             >
+                    height: "100%",
+                }}
+                >
             <ParticleBackground />
         
             <div
@@ -53,15 +53,20 @@ function App(){
                     left: 0,
                     width: "100%",
                     height: "100%",
-                  }}
+                }}
                 >
                 <Header />
                 <CreateArea addNote = {addNote} deleteNote = {deleteNote} />
                 
+                <div 
+                    style={{
+                    marginLeft:"10rem",
+                    overflow: "auto"
+                }}
+                >
                 {notes.map((props,idx)=>{
                     
                     return(
-                        
                         <Note 
                         key = {idx} 
                         id = {idx} 
@@ -71,6 +76,7 @@ function App(){
                         deleteNote = {deleteNote}
                         />  
                         ) })}
+                    </div>
                 <Footer />
 
             </div>
