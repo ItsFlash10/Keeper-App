@@ -46,7 +46,7 @@ footer p {
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 283px;
-  /* align-self: center; */
+  align-self: center;
   margin: 5px;
   float: left;
 }
@@ -110,9 +110,11 @@ form button {
   outline: none;
 }
 
-/* for making the canvas responsive */
-/* canvas{
-  width: auto !important;
-} */
+/* for making the canvas expand on shrinking the app */
+canvas{
+  position:fixed;
+  /* display: block; */
+  /* vertical-align: bottom; */
+}
 
 
