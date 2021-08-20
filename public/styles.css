@@ -114,8 +114,7 @@ form button {
 /* for making the canvas expand on shrinking the app */
 canvas{
   position:absolute;
-  /* display: block; */
-  /* vertical-align: bottom; */
+  display: block;
 }
 
 
