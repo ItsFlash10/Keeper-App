@@ -76,7 +76,7 @@ const particlesConfig = {
         },
         onclick: {
           enable: true,
-          mode: "repulse"
+          mode: "push"
         },
         resize: true
       },
@@ -99,7 +99,7 @@ const particlesConfig = {
           duration: 0.4
         },
         push: {
-          particles_nb: 4
+          particles_nb: 20
         },
         remove: {
           particles_nb: 2
