@@ -44,7 +44,7 @@ function App(){
                     height: "100%",
                 }}
                 >
-            <ParticleBackground />
+                <ParticleBackground />
         
             <div
                 style={{
@@ -60,9 +60,10 @@ function App(){
                 
                 <div 
                     style={{
-                    marginLeft:"10rem",
-                    overflow: "auto"
-                }}
+                        display: "flex",
+                        flexFlow: "row wrap",
+                        justifyContent: "center"                        
+                    }}
                 >
                 {notes.map((props,idx)=>{
                     
