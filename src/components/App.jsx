@@ -63,8 +63,9 @@ function App(){
                         display: "flex",
                         flexFlow: "row wrap",
                         justifyContent: "center",
-                        height: "59%",
-                        overflowY: "auto"                        
+                        height: "calc(100% - 20rem)",
+                        overflowY: "auto",
+                        marginTop: "1.8rem"                       
                     }}
                 >
                 {notes.map((props,idx)=>{
