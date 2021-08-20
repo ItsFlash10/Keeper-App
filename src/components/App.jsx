@@ -64,6 +64,7 @@ function App(){
                         display: "flex",
                         flexFlow: "row wrap",
                         justifyContent: "center",
+                        alignContent: "flex-start",
                         height: "calc(100% - 20rem)",
                         overflowY: "auto",
                         marginTop: "1.8rem"                       

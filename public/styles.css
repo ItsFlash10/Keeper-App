@@ -115,7 +115,7 @@ form button {
 canvas{
   position:absolute;
   display: block;
-  z-index: -1 !important;
+  /* vertical-align: bottom; */
 }
 
 
