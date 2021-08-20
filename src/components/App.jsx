@@ -58,11 +58,13 @@ function App(){
                 <Header />
                 <CreateArea addNote = {addNote} deleteNote = {deleteNote} />
                 
-                <div 
+                <div className = "notediv" 
                     style={{
                         display: "flex",
                         flexFlow: "row wrap",
-                        justifyContent: "center"                        
+                        justifyContent: "center",
+                        height: "59%",
+                        overflowY: "auto"                        
                     }}
                 >
                 {notes.map((props,idx)=>{
